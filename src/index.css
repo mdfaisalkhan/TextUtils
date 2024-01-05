@@ -1,0 +1,259 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+.navbar{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(227, 226, 226);
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.navbar-dark{
+  display: flex;
+  flex-wrap: wrap;
+  background-color:black;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+nav a{
+  text-decoration: none;
+  color: rgb(66, 66, 66);
+  font-size: 25px;
+}
+.menuA-dark{
+  color: white;
+}
+
+.navbar-brand-dark{
+  color:white;
+
+} 
+
+nav .navbar-brand{
+  padding-left: 15px;
+}
+.navbar ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+
+.navbar ul .menuA-light{
+  color: rgb(66, 66, 66);
+  margin: 0 30px;
+  font-size: 16px;
+  text-decoration: none;
+}
+.navbar ul .menuA-dark{
+  color: white;
+  margin: 0 30px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* 
+.search,.btn{
+  padding: 8px;
+  margin: 0 2px;
+  
+}
+.btn{
+  border-radius: 5px;
+  border: 2px solid rgb(0, 179, 0) ;
+  outline: none;
+  cursor: pointer;
+  color: green;
+}
+.search{
+  border-radius: 5px;
+  outline: none;
+}
+.btn:hover{
+  color: white;
+  background-color:  rgb(0, 179, 0) ;
+} */
+
+.container{
+  width: 70%;
+  margin: auto;
+  margin-top:15px;
+}
+h2{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 0;
+  color: rgb(73, 73, 73);
+}
+textarea{
+  width: 98%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.btn-textUtils{
+  padding: 8px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  background: rgb(30, 113, 236);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin:5px;
+}
+.btn-uppercase:hover{
+  background: rgb(23, 93, 198);
+
+}
+.wordchar,.readmin{
+  font-size: 14px;
+  margin-top: 10px;
+  color: gray;
+}
+
+.preview{
+  margin-top: 20px;
+}
+.preview-text{
+  font-size: 14px;
+  word-wrap: break-word;
+  max-width:100%;
+  overflow-wrap: break-word;
+}
+
+
+.about-heading{
+  text-align: center;
+  margin-top: 50px;
+}
+.about-text{
+  text-align: justify;
+  line-height:25px;
+  margin-top: 15px;
+  background-color: rgb(246, 246, 246);
+  padding: 10px;
+}
+.about-btn{
+  padding: 8px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  background: rgb(30, 113, 236);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin:5px;
+  margin-top:20px;
+}
+
+
+/* ------------Toggle btn--------------- */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 2px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: #2196F3;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.darkBtn{
+  margin: 10px;
+}
+.dark-text{
+  font-size: 13px;
+  margin: 0 10px
+
+}
+.dark-dark{
+  color: white;
+}
+
+/* =============Alert================= */
+.alert-Success,.alert-Danger,.alert-Warning {
+  padding: 10px; 
+  font-size: 14px;
+  border-radius: 2px;
+}
+.alert-Success {
+  background-color: rgb(176, 232, 176);
+  color: rgb(38, 113, 38);
+}
+.alert-Danger {
+  background-color: rgb(227, 170, 170);
+  color: rgb(113, 38, 38); 
+}
+.alert-Warning {
+  background-color: rgb(241, 238, 142);
+  color: rgb(110, 113, 38);
+}
+
+
+@media screen and (max-width: 700px) {
+  .container{
+    width: 85%;
+  }
+  .navbar ul {
+    display: none; 
+  }
+
+  .darkBtn {
+    display: none;
+  }
+  .about-text{
+    font-size: 13px;
+  }
+}
+
+

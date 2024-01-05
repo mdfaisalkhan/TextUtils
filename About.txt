@@ -1,0 +1,53 @@
+import React, {useState} from 'react'
+
+export default function About() {
+
+    const [myStyle, setMyStyle] = useState({
+            color:'Black',
+            backgroundColor:'white'
+    })
+    const [btntext, setBtnText] = useState("Dark Mode")
+
+    const [Abttext, setAbtText] = useState({
+        color:'black',
+        backgroundColor:'rgb(246, 246, 246)'
+    })
+
+    const toggleStyle=()=>{
+          if(myStyle.color==='black'){
+            setMyStyle({
+                color:'white',
+                backgroundColor:'black'
+            })
+            setAbtText({
+                color:'white',
+                backgroundColor:'rgb(36, 36, 36)'
+            })
+            setBtnText('Light Mode')
+
+        }
+        else{
+            setMyStyle({
+                color:'black',
+                backgroundColor:'white'
+            })
+            
+            setAbtText({
+                color:'black',
+                backgroundColor:'rgb(246, 246, 246)'
+            })
+            setBtnText('Dark Mode')
+          }
+        
+    }
+    
+  return (
+    <div className='container about-container' style={myStyle}>
+        <h1 className='about-heading'>About TextUtils</h1>
+        <p className='about-text' style={Abttext}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum cupiditate maxime nemo id. Fugit in at qui necessitatibus ipsum alias quod quisquam, libero ullam amet molestiae maiores maxime, odit excepturi, nostrum ipsam unde voluptates odio nulla repudiandae! Sed cumque, nihil sunt, assumenda laudantium laborum suscipit modi eius ipsam amet fugit delectus reiciendis. Quae voluptatem vitae atque quis cumque magnam eaque voluptatum quam, mollitia consectetur dolor illo, qui temporibus quaerat, minima distinctio beatae rerum? Ad tempora molestiae, voluptatem, dolor aliquid, voluptas molestias quam ratione dolorem optio laborum vitae. Illo architecto veritatis magnam accusantium omnis ea aperiam quidem consequuntur et consequatur.
+        </p>
+        <button onClick={toggleStyle} className='about-btn'>{btntext}</button>
+    </div>
+  )
+}
