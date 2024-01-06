@@ -6,8 +6,8 @@ export default function Navbar(props) {
   let myStyle={
     backgroundColor:props.mode ==='dark'?'white':'black'
   }
-  let myStyle1={
-    backgroundColor:props.mode ==='dark'?'black':'white'
+ let myStyle1={
+    backgroundColor:props.mode ==='dark'?'black':'rgb(227, 226, 226)'
   }
  
   const toggleHam = () => {
